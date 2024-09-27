@@ -31,7 +31,7 @@ create table if not exists Songs (
     id serial primary key,
     album integer references Albums(id) not null,
     name varchar(60) not null,
-    length interval not null
+    length integer not null
 );
 
 create table if not exists Collections (
