@@ -21,17 +21,17 @@ create table if not exists Albums (
     year integer not null
 );
 
-create table if not exists AlbumArtists (
-    album_id integer references Albums(id) not null,
-    artist_id integer references Artists(id) not null,
-    constraint pk_album_artists primary key (album_id, artist_id)
-);
+-- create table if not exists AlbumArtists (
+--     album_id integer references Albums(id) not null,
+--     artist_id integer references Artists(id) not null,
+--     constraint pk_album_artists primary key (album_id, artist_id)
+-- );
 
 create table if not exists Songs (
     id serial primary key,
     album integer references Albums(id) not null,
     name varchar(60) not null,
-    length interval not null
+    length integer not null
 );
 
 create table if not exists Collections (
