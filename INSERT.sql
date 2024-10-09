@@ -45,14 +45,28 @@ values (3, 4);
 
 -- albums
 
-insert into albums (artist, name, year)
-values (1, 'sacrement of sin', 2020);
+insert into albums (name, year)
+values ('sacrement of sin', 2020);
 
-insert into albums (artist, name, year)
-values (2, 'coat of arms', 2010);
+insert into albums (name, year)
+values ('coat of arms', 2010);
 
-insert into albums (artist, name, year)
-values (1, 'wake up the wicked', 2024);
+insert into albums (name, year)
+values ('wake up the wicked', 2024);
+
+insert into albums (name, year)
+values ('cool album', 2019);
+
+-- album - artist
+
+insert into albumartists (album_id, artist_id)
+values (1, 1);
+
+insert into albumartists (album_id, artist_id)
+values (2, 2);
+
+insert into albumartists (album_id, artist_id)
+values (3, 1);
 
 -- songs
 
@@ -76,6 +90,45 @@ values (2, 'track third my', 100);
 
 insert into songs (album, name, length)
 values (3, 'salmon', 60);
+
+insert into songs (album, name, length)
+values (2, 'my own', 100);
+
+insert into songs (album, name, length)
+values (2, 'own my', 100);
+
+insert into songs (album, name, length)
+values (2, 'my', 100);
+
+insert into songs (album, name, length)
+values (2, 'oh my god', 100);
+
+insert into songs (album, name, length)
+values (2, 'myself', 100);
+
+insert into songs (album, name, length)
+values (2, 'by myself', 100);
+
+insert into songs (album, name, length)
+values (2, 'bemy self', 100);
+
+insert into songs (album, name, length)
+values (2, 'myself by', 100);
+
+insert into songs (album, name, length)
+values (2, 'by myself by', 100);
+
+insert into songs (album, name, length)
+values (2, 'beemy', 100);
+
+insert into songs (album, name, length)
+values (4, 'premyne', 100);
+
+insert into songs (album, name, length)
+values (4, 'мой', 100);
+
+insert into songs (album, name, length)
+values (4, 'слово мой', 100);
 
 -- collections
 
